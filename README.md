@@ -1,7 +1,7 @@
 # oop-lecture
 オブジェクト指向教える用。C#。
 
-## Snipets
+## Snippets
 
 ```cs
 protected override void OnMouseDown(MouseEventArgs e)
