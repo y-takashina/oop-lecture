@@ -4,15 +4,15 @@
 ## Snippets
 
 ```cs
-protected override void OnMouseDown(MouseEventArgs e)
-{
-    if (!_pressedButtons.Contains(e.Button)) _pressedButtons.Add(e.Button);
-}
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!_pressedKeys.Contains(e.KeyCode)) _pressedKeys.Add(e.KeyCode);
+        }
 
-protected override void OnMouseUp(MouseEventArgs e)
-{
-    _pressedButtons.Remove(e.Button);
-}
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            _pressedKeys.Remove(e.KeyCode);
+        }
 ```
 
 ```
