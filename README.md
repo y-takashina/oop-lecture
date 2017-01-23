@@ -6,7 +6,7 @@
 ```cs
 protected override void OnMouseDown(MouseEventArgs e)
 {
-    if (!_pressedButtons.Contains(e.Button)) _pressedButtons.AddLast(e.Button);
+    if (!_pressedButtons.Contains(e.Button)) _pressedButtons.Add(e.Button);
 }
 
 protected override void OnMouseUp(MouseEventArgs e)
