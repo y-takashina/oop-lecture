@@ -15,3 +15,12 @@ protected override void OnMouseUp(MouseEventArgs e)
 }
 ```
 
+```
+        public bool Intersects(GameObject obj)
+        {
+            return X < obj.X + obj.W && X + W > obj.X &&
+                   Y < obj.Y + obj.H && Y + H > obj.Y;
+        }
+```
+
+
